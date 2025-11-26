@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/grindlemire/graph-builder/pkg/engine"
-	"github.com/grindlemire/graph-builder/pkg/register"
+	"github.com/grindlemire/graph-builder/basic/pkg/engine"
+	"github.com/grindlemire/graph-builder/basic/pkg/register"
 )
 
 func main() {

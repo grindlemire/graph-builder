@@ -3,13 +3,17 @@ package node2a
 import (
 	"fmt"
 
-	"github.com/grindlemire/graph-builder/pkg/engine"
+	"github.com/grindlemire/graph-builder/basic/pkg/engine"
 )
 
+// Output is the output of the node that other nodes in the graph can use.
 type Output struct {
 	Message string
 }
 
+// FromDeps is a helper function that returns the Output for this node
+// from the set of dependencies. This is used by other nodes to easily
+// parse this node's output.
 func FromDeps(deps map[string]engine.Result) (Output, error) {
 	result, ok := deps[ID]
 	if !ok {
@@ -23,4 +27,3 @@ func FromDeps(deps map[string]engine.Result) (Output, error) {
 
 	return output, nil
 }
-

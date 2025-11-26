@@ -1,6 +1,6 @@
 package register
 
-import "github.com/grindlemire/graph-builder/pkg/engine"
+import "github.com/grindlemire/graph-builder/basic/pkg/engine"
 
 var registry = make(map[string]engine.Node)
 
